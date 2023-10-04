@@ -16,6 +16,7 @@
 {
   <li>@Html.ActionLink($"{restaurant.Name}", "Details", new { id = restaurant.RestaurantId }) | @restaurant.Cuisine.Type</li>
 }
+
 <div class="restaurants">
-<p>@Html.ActionLink("Add new restaurant", "Create")</p>
+  @Html.ActionLink("Add new restaurant", "Create")
 </div>
