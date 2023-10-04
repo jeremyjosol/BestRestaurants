@@ -11,12 +11,30 @@
   <h3>No cuisines have been added.</h3>
 } 
 
-<ul>
+@* <ul>
   @foreach(Cuisine cuisine in Model)
   {
     <li>@Html.ActionLink($"{cuisine.Type}", "Details", new { id = cuisine.CuisineId })</li>
   }
-</ul>
+</ul> *@
+
+<table>
+  <thead>
+    <tr>
+      <th>Cuisine Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (Cuisine cuisine in Model)
+    {
+      <tr>
+        <td>@cuisine.Type</td>
+        <td>@Html.ActionLink("Details", "Details", new { id = cuisine.CuisineId })</td>
+      </tr>
+    }
+  </tbody>
+</table>
 
 <div class="cuisines">
   @Html.ActionLink("Add new cuisine", "Create")
