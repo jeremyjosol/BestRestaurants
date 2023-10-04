@@ -9,7 +9,8 @@ body {
 
 .main-container {
   margin: auto;
-  margin-top: 175px;
+  margin-top: 75px;
+  height: 100vh;
 }
 
 .restaurants, .cuisines {
@@ -48,6 +49,23 @@ a {
 
 .restaurants a:hover, .cuisines a:hover{
   color: white;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th {
+  background-color: rgba(128, 128, 128, 0.354);
+  border: solid grey 1px;
+  padding: 20px;
+}
+
+td {
+  border: solid grey 1px;
+  padding: 20px;
 }
 
 div#footer {
