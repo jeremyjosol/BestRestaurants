@@ -7,7 +7,7 @@
 
 <h2>Cuisine Information</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)<h3>
+<h3>Cuisine Type: @Html.DisplayFor(model => model.Type)<h3>
 
 @if (@Model.Restaurants.Count == 0)
 {
@@ -15,13 +15,15 @@
 } 
 else
 {
-  <h3>Restaurants:</h3>
-  <ul>
+  <h3>All Restaurants:</h3>
+  
     @foreach (Restaurant restaurant in Model.Restaurants)
     {
-      <li>@Html.ActionLink($"{restaurant.Name}", "Details", "Restaurants", new { id = restaurant.RestaurantId })</li>
+      <div class="restaurants">
+      @Html.ActionLink($"{restaurant.Name}", "Details", "Restaurants", new { id = restaurant.RestaurantId })
+      </div>
     }
-  </ul>
+  
 }
 
 <p>@Html.ActionLink("Edit Cuisine", "Edit", new { id = Model.CuisineId })</p>

@@ -33,6 +33,12 @@ namespace BestRestaurants.Controllers
       {
         return RedirectToAction("Create");
       }
+
+      // if (restaurant.IsMichelin == null)
+      // {
+      //   restaurant.IsMichelin = false;
+      // }
+
       _db.Restaurants.Add(restaurant);
       _db.SaveChanges();
       return RedirectToAction("Index");

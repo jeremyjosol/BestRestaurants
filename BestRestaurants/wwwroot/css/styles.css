@@ -57,15 +57,10 @@ a {
   justify-content: center;
 }
 
-th {
-  background-color: rgba(128, 128, 128, 0.354);
-  border: solid grey 1px;
-  padding: 20px;
-}
-
 td {
   border: solid grey 1px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 60px;
 }
 
 div#footer {

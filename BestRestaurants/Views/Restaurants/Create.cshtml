@@ -12,6 +12,8 @@
 @using (Html.BeginForm())
 {
   @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
+  @Html.TextBoxFor(model => model.Rating, new { placeholder = "Rating" })
+  @* @Html.CheckBoxFor(model => model.IsMichelin) *@
   <br />
   @Html.LabelFor(model => model.Cuisine)
   <br />
