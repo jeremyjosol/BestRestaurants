@@ -21,5 +21,21 @@ namespace BestRestaurants.Controllers
                                   .ToList();
       return View(model);
     }
+    public ActionResult Create()
+    {
+      ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Type");
+      return View();
+    }
+    [HttpPost]
+    public ActionResult Create(Restaurant restaurant)
+    {
+      if (restaurant.CuisineId == 0)
+      {
+        return RedirectToAction("Create");
+      }
+      _db.Restaurants.Add(restaurant);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
