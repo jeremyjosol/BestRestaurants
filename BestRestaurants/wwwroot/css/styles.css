@@ -12,23 +12,31 @@ body {
   margin-top: 175px;
 }
 
-.restaurants {
-  background-color: rgba(128, 128, 128, 0.41);
-  margin: auto;
-  width: 250px;
-  height: 100px;
-}
-
-.cuisines {
+.restaurants, .cuisines {
   background-color: rgba(128, 128, 128, 0.41);
   margin: auto;
   margin-top: 10px;
   width: 250px;
   height: 100px;
+  position: relative;
 }
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+.restaurants a, .cuisines a {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.restaurants:hover, .cuisines:hover {
+  transform: scale(1.1);
 }
 
 div#footer {
