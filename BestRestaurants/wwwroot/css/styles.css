@@ -2,6 +2,11 @@ html {
   text-align: center;
 }
 
+.main-container {
+  margin: auto;
+  margin-top: 175px;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
