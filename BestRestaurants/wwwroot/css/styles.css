@@ -12,6 +12,25 @@ body {
   margin-top: 175px;
 }
 
+.restaurants {
+  background-color: rgba(128, 128, 128, 0.41);
+  margin: auto;
+  width: 250px;
+  height: 100px;
+}
+
+.cuisines {
+  background-color: rgba(128, 128, 128, 0.41);
+  margin: auto;
+  margin-top: 10px;
+  width: 250px;
+  height: 100px;
+}
+
+a {
+  color: white;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
