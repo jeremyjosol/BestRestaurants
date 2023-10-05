@@ -29,6 +29,15 @@ h1 {
   overflow-y: auto;
 }
 
+.form-container {
+  background:rgba(16, 16, 16, 0.213);
+  margin: auto;
+  padding: 50px 10px 50px 10px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.849);
+}
+
 .restaurants, .cuisines {
   background-color: rgba(128, 128, 128, 0.046);
   border: solid grey 1px;
