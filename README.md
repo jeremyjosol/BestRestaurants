@@ -1,6 +1,7 @@
 # Best Restaurants
 
 ## About
+![BestRestaurants](https://github.com/jeremyjosol/BestRestaurants/blob/main/BestRestaurants/wwwroot/img/BestRestaurants.jpg?raw=true)
 
 ## Application Setup
 
@@ -21,4 +22,4 @@
   > This command will start the project in development mode with a watcher.
 
 ## SQL Designer
-![RestaurantSQL](/wwwroot/img/RestaurantSQL.jpg)
+![RestaurantSQL](https://github.com/jeremyjosol/BestRestaurants/blob/main/BestRestaurants/wwwroot/img/RestaurantSQL.jpg?raw=true)
