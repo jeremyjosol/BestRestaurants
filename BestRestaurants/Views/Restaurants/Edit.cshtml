@@ -10,11 +10,12 @@
 {
   @Html.HiddenFor(model => model.RestaurantId)
   @Html.EditorFor(model => model.Name)
+  @Html.EditorFor(model => model.Rating, new { placeholder = "★ Rating" })
   <br />
   @Html.LabelFor(model => model.Cuisine)
   @Html.DropDownList("CuisineId")
 
-  <input type="submit" value="Save" class="btn btn-primary"/>
+  <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
 }
-
+<br />
 <p>@Html.ActionLink("Back to list", "Index")</p>
