@@ -56,8 +56,7 @@ namespace BestRestaurants.Controllers
       ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Type");
       return View(thisRestaurant);
     }
-    [HttpPost]
-    [ActionName("EditRestaurant")]
+    [HttpPost, ActionName("EditRestaurant")]
     public ActionResult Edit(Restaurant restaurant)
     {
       _db.Restaurants.Update(restaurant);

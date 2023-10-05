@@ -2,9 +2,22 @@ html {
   text-align: center;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.396);
+}
+
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.956);
+}
+
+h1 {
+  font-size: 40px; 
+  background: linear-gradient( 
+      to right, #587ee7, #69a2f1, 
+       #6d396d, #bba0f9); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
 }
 
 .main-container {
