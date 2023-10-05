@@ -5,9 +5,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <nav class="navbar navbar-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
         <h1>Best Restaurants</h1>
         @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Add A Restaurant", "Create", "Restaurants")
+        @Html.ActionLink("Add A Cuisine", "Create")
         </a>
       </nav>
       <hr />
