@@ -21,3 +21,4 @@
   > This command will start the project in development mode with a watcher.
 
 ## SQL Designer
+![RestaurantSQL](/wwwroot/img/RestaurantSQL.jpg)
