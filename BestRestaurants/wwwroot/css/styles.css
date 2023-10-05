@@ -3,12 +3,18 @@ html {
 }
 
 .navbar {
+  background-color: rgba(0, 0, 0, 0.677);
+}
+
+.navbar-brand {
   margin-left: 30px;
-  margin-right: 5px;
+  margin-right: 30px;
 }
 
 body {
   background-color: black;
+  background-image: url(../img/restaurant.jpg);
+  background-size: cover;
   color: rgba(255, 255, 255, 0.956);
   font-family: 'Italiana', sans-serif;
 }
@@ -23,19 +29,21 @@ h1 {
 }
 
 .main-container {
+  background-color: rgba(0, 0, 0, 0.421);
+  border-radius: 10px;
   margin: auto;
   margin-top: 80px;
-  height: 100vh;
+  padding: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 350px;
   overflow-y: auto;
 }
 
 .form-container {
-  background:rgba(16, 16, 16, 0.213);
   margin: auto;
   padding: 50px 10px 50px 10px;
-  border-radius: 10px;
   width: 350px;
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.849);
 }
 
 .restaurants, .cuisines {
@@ -78,6 +86,7 @@ a {
 
 .badge {
   background-color: rgba(14, 152, 222, 0.644);
+  margin-right: 10px;
 }
 
 div#footer {

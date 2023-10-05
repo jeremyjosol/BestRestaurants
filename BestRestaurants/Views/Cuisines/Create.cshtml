@@ -4,11 +4,13 @@
 
 @model BestRestaurants.Models.Cuisine
 
-<h4>Add a new cuisine</h4>
-@using (Html.BeginForm())
-{
-  @Html.TextBoxFor(model => model.Type)
-  <input type="submit" value="Add" class="btn btn-primary" />
-}
+<div class="form-container">
+  <h4>Add a new cuisine</h4>
+  @using (Html.BeginForm())
+  {
+    @Html.TextBoxFor(model => model.Type)
+    <input type="submit" value="Add" class="btn btn-primary" />
+  }
+</div>
 <br />
 <p>@Html.ActionLink("Show all cuisines", "Index")</p>
