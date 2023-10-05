@@ -6,18 +6,17 @@
 
 <h4>Add a new restaurant</h4>
 
-<p><strong>NOTE:</strong> You need to have at least one cuisine before you can add a restaurant!</p>
-<p>Go to @Html.ActionLink("this page", "Create", "Cuisines") to create a cuisine.</p>
-
 @using (Html.BeginForm())
 {
-  @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
+  @Html.TextBoxFor(model => model.Name, new { placeholder = "Name", @required = "required" })
   <br />
   @Html.TextBoxFor(model => model.Rating, new { placeholder = "Rating" })
   @* @Html.CheckBoxFor(model => model.IsMichelin) *@
   <br />
   @Html.DropDownList("CuisineId")
   <br />
-  <input type="submit" value="Add new restaurant" class="btn btn-success" />
+  <br />
+  <input type="submit" value="Add" class="btn btn-success" />
 }
+<br />
 <p>@Html.ActionLink("Show all restaurants", "Index")</p>
