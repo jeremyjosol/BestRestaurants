@@ -4,11 +4,15 @@ html {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.396);
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.956);
+  font-family: 'Italiana', sans-serif;
+
 }
 
 h1 {
