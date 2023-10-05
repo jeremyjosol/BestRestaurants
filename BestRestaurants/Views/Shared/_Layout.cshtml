@@ -11,6 +11,11 @@
         <span class="badge badge-primary">@Html.ActionLink("Home", "Index", "Home")</span>
         <span class="badge badge-primary">@Html.ActionLink("Add A Restaurant", "Create", "Restaurants")</span>
         <span class="badge badge-primary">@Html.ActionLink("Add A Cuisine", "Create", "Cuisines")</span>
+        @using (Html.BeginForm("Search", "Restaurants"))
+        {
+          @Html.TextBox("searchRestaurants", null, new { placeholder = "Search Restaurants" })
+          <button type="submit" class="btn btn-primary btn-sm">Search</button>
+        }
     </nav>
     <meta charset="utf-8">
     <title>Best Restaurants</title>
