@@ -3,7 +3,7 @@ html {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.396);
+  /* background-color: rgba(0, 0, 0, 0.396); */
   margin-left: 30px;
   margin-right: 5px;
 }
@@ -66,6 +66,10 @@ a {
 
 .restaurants a:hover, .cuisines a:hover{
   color: white;
+}
+
+.badge {
+  background-color: rgba(14, 152, 222, 0.644);
 }
 
 div#footer {
