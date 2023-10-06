@@ -1,7 +1,7 @@
 # Best Restaurants
 
 ## About
-This web application provides users a platform to create and add new cuisines and restaurants. Users can rate their favorite restaurants with an additional search feature that populates queries based on restaurant names. 
+This web application provides users a platform to create and add new cuisines and restaurants. Users can rate their favorite restaurants and explore restaurants with a search feature that populates results based on restaurant name queries. 
 
 Ultimately, Best Restaurants serves as continuing the practice of a fullstack project with strong focus on utilizing the MVC architectural pattern with C# to ensure a well-structured and maintainable codebase while also prioritizing frontend design, creating an intuitive and visually appealing user experience.
 
