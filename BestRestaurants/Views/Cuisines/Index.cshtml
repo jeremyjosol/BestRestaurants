@@ -11,10 +11,10 @@
 
 <h1>Cuisines</h1>
     
-  @foreach (Cuisine cuisine in Model)
-  {
-    <div class="cuisines">
-      @Html.ActionLink($"View All {@cuisine.Type}", "Details", new { id = cuisine.CuisineId })
-    </div>
-  }
+@foreach (Cuisine cuisine in Model)
+{
+  <div class="cuisines">
+    @Html.ActionLink($"View All {@cuisine.Type}", "Details", new { id = cuisine.CuisineId })
+  </div>
+}
 
